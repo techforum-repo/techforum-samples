@@ -17,9 +17,8 @@ Download the pre-built jar file from - https://github.com/techforum-repo/project
 
 The rules are registered with the repository name custom-project-rules
 
-####To configure new rules####
+#### To configure new rules
 
-```
 * Create new rule class under src\main\java\org\sonar\custom\projectrules\checks (Refer AvoidAnnotationRule.java)
 
 * Add new Java rule file entry to src\main\java\org\sonar\custom\projectrules\CustomProjectRulesList.java 
@@ -36,6 +35,3 @@ The rules are registered with the repository name custom-project-rules
  * Create the Junit test class for the new rules under src\test\java\org\sonar\custom\projectrules\checks(refer AvoidAnnotationCheckTest.java) - the JUNIT test cases can be executed to verify the rule exception is thrown for the test classes
  
  * Create the test classes under src\test\files (refer AvoidAnnotationCheck.java) 
- 
-
-```
