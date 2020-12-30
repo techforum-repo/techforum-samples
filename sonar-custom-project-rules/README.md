@@ -17,16 +17,18 @@ Download the pre-built jar file from - https://github.com/techforum-repo/project
 
 The rules are registered with the repository name custom-project-rules
 
-#### To configure new rules
+### To configure new rules
 
 * Create new rule class under src\main\java\org\sonar\custom\projectrules\checks (Refer AvoidAnnotationRule.java)
 
 * Add new Java rule file entry to src\main\java\org\sonar\custom\projectrules\CustomProjectRulesList.java 
 
- public static List<Class<? extends JavaCheck>> getJavaChecks() {
-    return Collections.unmodifiableList(Arrays.asList(
-       AvoidAnnotationRule.class, NewRule.class));
-  }
+```
+	 public static List<Class<? extends JavaCheck>> getJavaChecks() {
+		return Collections.unmodifiableList(Arrays.asList(
+		   AvoidAnnotationRule.class, NewRule.class));
+	  }
+ ```
 
  * Create the meta data for the new rules under src\main\resources\org\sonar\l10n\custom\projectrules\squid (refer AvoidAnnotation_java.json)
  
