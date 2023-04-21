@@ -17,4 +17,4 @@ Access
 
 Some of the know issues
 
-* the external Java Script loaded into the target.html not working while embeding the page through shadow DOM
+* the external Java Script/CSS loaded into the target.html not working while embeding the page through shadow DOM (Still exploring)
