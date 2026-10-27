@@ -1,1 +1,5 @@
 
+
+## License
+
+[MIT](LICENSE)
